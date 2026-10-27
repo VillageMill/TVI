@@ -1,9 +1,8 @@
-/* =========================================
+/* ==========================================
    THE VILLAGE INDUSTRY
-   Main Stylesheet — Version 2
-   ========================================= */
+   ORIGINAL STYLESHEET
+   ========================================== */
 
-/* COLORS */
 :root {
   --ink: #1a2b28;
   --green: #233731;
@@ -15,7 +14,10 @@
   --line: #d9d6cb;
 }
 
-/* GENERAL */
+/* ==========================================
+   GENERAL
+   ========================================== */
+
 * {
   box-sizing: border-box;
 }
@@ -41,11 +43,16 @@ img {
   width: 100%;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin-top: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Libre Baskerville', Georgia, serif;
   font-weight: 400;
 }
@@ -55,7 +62,10 @@ em {
   color: var(--bronze-light);
 }
 
-/* TOP RIBBON */
+/* ==========================================
+   TOP RIBBON
+   ========================================== */
+
 .topline {
   height: 30px;
   background: var(--green);
@@ -68,7 +78,10 @@ em {
   letter-spacing: 2.2px;
 }
 
-/* HEADER */
+/* ==========================================
+   HEADER
+   ========================================== */
+
 .header {
   height: 95px;
   display: flex;
@@ -122,7 +135,10 @@ em {
   margin-top: 3px;
 }
 
-/* NAVIGATION */
+/* ==========================================
+   NAVIGATION
+   ========================================== */
+
 .nav {
   display: flex;
   gap: 28px;
@@ -153,7 +169,10 @@ em {
   display: none;
 }
 
-/* HERO */
+/* ==========================================
+   HERO
+   ========================================== */
+
 .hero {
   min-height: 660px;
   height: calc(100vh - 125px);
@@ -174,9 +193,9 @@ em {
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(12,26,23,.87) 0%,
-    rgba(12,26,23,.65) 34%,
-    rgba(12,26,23,.12) 80%
+    rgba(12, 26, 23, .87) 0%,
+    rgba(12, 26, 23, .65) 34%,
+    rgba(12, 26, 23, .12) 80%
   );
 }
 
@@ -221,7 +240,10 @@ em {
   margin-top: 34px;
 }
 
-/* BUTTONS */
+/* ==========================================
+   BUTTONS
+   ========================================== */
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -244,7 +266,7 @@ em {
 }
 
 .button-outline {
-  border: 1px solid rgba(255,255,255,.7);
+  border: 1px solid rgba(255, 255, 255, .7);
   color: white;
 }
 
@@ -252,6 +274,10 @@ em {
   background: var(--green);
   color: white;
 }
+
+/* ==========================================
+   HERO DETAILS
+   ========================================== */
 
 .hero-side {
   position: absolute;
@@ -274,12 +300,18 @@ em {
   opacity: .7;
 }
 
-/* GENERAL SECTIONS */
+/* ==========================================
+   GENERAL SECTIONS
+   ========================================== */
+
 .section {
-  padding: 110px max(6%, calc((100% - 1320px)/2));
+  padding: 110px max(6%, calc((100% - 1320px) / 2));
 }
 
-/* INTRO */
+/* ==========================================
+   INTRODUCTION
+   ========================================== */
+
 .intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -314,7 +346,10 @@ h2 {
   margin-left: 30px;
 }
 
-/* MEMBERSHIP CARDS */
+/* ==========================================
+   MEMBERSHIP CARDS
+   ========================================== */
+
 .offerings {
   background: #fff;
 }
@@ -385,7 +420,10 @@ h2 {
   margin: 22px 0 0;
 }
 
-/* PLYMOUTH LOCATION */
+/* ==========================================
+   PLYMOUTH LOCATION
+   ========================================== */
+
 .location {
   display: grid;
   grid-template-columns: 1.05fr .95fr;
@@ -407,7 +445,7 @@ h2 {
   position: absolute;
   bottom: 20px;
   left: 22px;
-  background: rgba(26,43,40,.86);
+  background: rgba(26, 43, 40, .86);
   color: white;
   padding: 10px 14px;
   font-size: 9px;
@@ -458,7 +496,10 @@ h2 {
   color: #68716b;
 }
 
-/* DIFFERENTIATORS AND AMENITIES */
+/* ==========================================
+   DIFFERENTIATORS / AMENITIES
+   ========================================== */
+
 .difference {
   background: var(--paper);
 }
@@ -491,7 +532,10 @@ h2 {
   color: #667069;
 }
 
-/* HISTORIC STORY AND LARGER MEETING SPACES */
+/* ==========================================
+   STORY / LARGER MEETING SPACES
+   ========================================== */
+
 .story {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -536,7 +580,10 @@ h2 {
   letter-spacing: 2px;
 }
 
-/* CONTACT */
+/* ==========================================
+   CONTACT
+   ========================================== */
+
 .cta {
   text-align: center;
   background: var(--cream);
@@ -567,7 +614,10 @@ h2 {
   font-size: 10px;
 }
 
-/* FOOTER */
+/* ==========================================
+   FOOTER
+   ========================================== */
+
 .footer {
   background: #152521;
   color: #e9ece6;
@@ -620,8 +670,12 @@ h2 {
   letter-spacing: 1px;
 }
 
-/* TABLET */
+/* ==========================================
+   TABLET
+   ========================================== */
+
 @media (max-width: 1000px) {
+
   .nav {
     gap: 15px;
   }
@@ -641,10 +695,15 @@ h2 {
   .section {
     padding: 85px 6%;
   }
+
 }
 
-/* MOBILE */
+/* ==========================================
+   MOBILE
+   ========================================== */
+
 @media (max-width: 760px) {
+
   .topline {
     justify-content: center;
   }
@@ -776,10 +835,15 @@ h2 {
   .section {
     padding: 70px 7%;
   }
+
 }
 
-/* ACCESSIBILITY */
+/* ==========================================
+   ACCESSIBILITY
+   ========================================== */
+
 @media (prefers-reduced-motion: reduce) {
+
   html {
     scroll-behavior: auto;
   }
@@ -787,4 +851,5 @@ h2 {
   .button {
     transition: none;
   }
+
 }

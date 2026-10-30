@@ -16,3 +16,21 @@
     max-width: 220px;
     object-fit: contain;
 }
+
+/* ============================================================
+   FOOTER - CENTER CIRCULAR LOGO
+   ============================================================ */
+
+.footer-brand-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.footer-round-logo {
+    display: block;
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+}
